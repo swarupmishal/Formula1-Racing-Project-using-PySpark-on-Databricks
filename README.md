@@ -12,14 +12,30 @@ Data can be downloaded from http://ergast.com/mrd/
 ![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/8f0a9c00-0d95-4c2d-9925-fa32279e7e43)
 
 ### Data Ingestion Requirements:
-![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/618a6a5f-39a3-4868-9b3f-c015cea2ea7c)
+- Ingest all files into data lake
+- Ingested data must've schema applied
+- Ingested data must've audit columns
+- Ingested data must be stored in columnar format (i.e. parquet)
+- Must be able to analyze data using SQL
+- Ingestion logic must be able to handle incremental load
 
 ### Data Transformation Requirements:
-![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/822e56da-10e5-483c-993b-aca86370eddd)
+- Join the key information required to create a new table
+- Join the key information for analysis to create a new table
+- Transformed tables must have audit columns
+- Must be able to analyze using SQL
+- Store transformed data in columnar format (i.e. parquet)
+- Transformation logic must be able to handle incremental load
 
 ### Reqporting Requirements:
-![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/96c60394-1e2c-41f7-94d1-76652012062c)
+- Driver Standings like shown below
+![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/35fc3ef6-805d-4424-a599-d1d9fee6ba85)
+
+- Constructor Standings
+![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/321678d7-8019-42ef-94f0-a53073a3e88a)
+
 
 ### Solution Architecture:
+I've exported data from Ergast website and imported into ADLS raw layer. This data is ingested to processed layer in the parquet format. Additional columns are also added for auditing purpose. This data is transformed using delta lake for importing into the presentation layer. Data is used for reporting and BI purpose from the presentation layer. Azure Data Factory is used to build data pipelines for scheduling our pipelines.
+
 ![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/74255edc-12d6-45a2-b64e-84b0d1901b59)
-So I've exported data from Ergast website and imported into ADLS raw layer. This data is ingested to processed layer in the parquet format. Additional columns are also added for auditing purpose. This data is transformed using delta lake for importing into the presentation layer. Data is used for reporting and BI purpose from the presentation layer. Azure Data Factory is used to build data pipelines for scheduling our pipelines.
