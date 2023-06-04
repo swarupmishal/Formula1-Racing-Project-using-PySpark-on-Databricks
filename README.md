@@ -36,7 +36,7 @@ Data can be downloaded from http://ergast.com/mrd/
 ![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/321678d7-8019-42ef-94f0-a53073a3e88a)
 
 
-### Solution Architecture:
+# Solution Architecture:
 I've exported data from Ergast website and imported into ADLS raw layer. This data is ingested to processed layer in the parquet format. Additional columns are also added for auditing purpose. This data is transformed using delta lake for importing into the presentation layer. Data is used for reporting and BI purpose from the presentation layer. Azure Data Factory is used to build data pipelines for scheduling our pipelines.
 
 ![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/74255edc-12d6-45a2-b64e-84b0d1901b59)
