@@ -3,7 +3,6 @@
 
 ### Project Overview:
 Built a Formula 1 Data Engineering project using Spark on Azure Databricks. Formula 1 season happens once a year roughly 20 races. Each race happens over a weekend. Roughly 10 teams (constructors) participate in a season. Each team have two drivers who participate in the race. Two drivers get qualified from the entire team and they get to start the race earlier. Each driver can have multiple pit stops to change tires or fix damaged car. Based on the race results, driver standings and constructor standings are decided. The top of the drivers standings becomes the drivers' champion and the team that tops the constructor standings, becomes the constructors' champion.<br>
-![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/f1cd123e-9712-4752-a7bc-c4adcb421b5f)
 
 ### Data:
 Data can be downloaded from http://ergast.com/mrd/
@@ -27,11 +26,13 @@ Data can be downloaded from http://ergast.com/mrd/
 - Store transformed data in columnar format (i.e. parquet)
 - Transformation logic must be able to handle incremental load
 
-### Reqporting Requirements:
-- Driver Standings like shown below
+### Reporting Requirements:
+- Get Driver Standings as shown below<br>
+
 ![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/35fc3ef6-805d-4424-a599-d1d9fee6ba85)
 
-- Constructor Standings
+- Get Constructor Standings as shown below<br>
+
 ![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/321678d7-8019-42ef-94f0-a53073a3e88a)
 
 
