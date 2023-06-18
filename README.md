@@ -2,7 +2,7 @@
 ![image](https://github.com/swarupmishal/Formula1-Racing-Project-using-PySpark-on-Databricks/assets/25344771/fb72a5f8-d08f-4ad9-aa2b-574e47a1dd2b)<br>
 
 ### Project Overview:
-Built a Formula 1 Data Engineering project using Spark on Azure Databricks. Formula 1 season happens once a year roughly 20 races. Each race happens over a weekend. Roughly 10 teams (constructors) participate in a season. Each team have two drivers who participate in the race. Two drivers get qualified from the entire team and they get to start the race earlier. Each driver can have multiple pit stops to change tires or fix damaged car. Based on the race results, driver standings and constructor standings are decided. The top of the drivers standings becomes the drivers' champion and the team that tops the constructor standings, becomes the constructors' champion.<br>
+Built a Formula 1 Data Engineering project using Spark on Azure Databricks and Delta Lake architecture. Formula 1 season happens once a year roughly 20 races. Each race happens over a weekend. Roughly 10 teams (constructors) participate in a season. Each team have two drivers who participate in the race. Two drivers get qualified from the entire team and they get to start the race earlier. Each driver can have multiple pit stops to change tires or fix damaged car. Based on the race results, driver standings and constructor standings are decided. The top of the drivers standings becomes the drivers' champion and the team that tops the constructor standings, becomes the constructors' champion.<br>
 
 ### Data:
 Data can be downloaded from http://ergast.com/mrd/
